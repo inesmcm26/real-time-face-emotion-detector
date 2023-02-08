@@ -2,13 +2,11 @@
 
 # How to run
 
-1. Download the model from https://drive.google.com/file/d/1B_6Phpj36adpaCYwBXHbZLLjk3c9gSSl/view?usp=sharing
-
-2. Run 'live_detection.ipynb' file
+1. Run 'live_detection.ipynb' file
 
 - It is possible that some issues arise due to OpenCV VideoCapture. This issues are specific for each type of camera and operating system.
 
-3. To leave the video capture press 'q'.
+2. To leave the video capture press 'q'.
 
 ## Live results
 
