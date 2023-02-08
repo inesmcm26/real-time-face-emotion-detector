@@ -38,7 +38,7 @@ The model choosen was VGG16:
 
 A batch normalization layer was added after all convolutional and dense layers in order to accelerate convergence and reduce overfitting.
 
-A dropout layer was also added before the last dense layer with proportion of neurons to drop of 0.3. This choice has aldo in mind reducing overfit.
+A dropout layer was also added before the last dense layer with proportion of neurons to drop of 0.3. This choice has also in mind reducing overfit.
 
 ## Data Augmentation
 
@@ -46,7 +46,7 @@ To reduce overfitting, some data augmentation was performed on the training data
 
 ## Model training
 
-The model was trained for 30 epochs with batches with 32 observations, using Adam optimizer with initial learning rate of 0.0001 and categorical cross entropy losso function.
+The model was trained for 30 epochs with batches with 32 observations, using Adam optimizer with initial learning rate of 0.0001 and categorical cross entropy loss function.
 
 ## Model evaluation and assessment
 
