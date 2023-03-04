@@ -2,17 +2,19 @@
 
 # How to run
 
-1. Run 'live_detection.ipynb' file
+Run 'demo.ipynb' file
+
+- Instead of training the model, you can load the weights of the model that is availale in in the [vgg.h5](/models/vgg.h5) file. There is already one cell that does this.
 
 - It is possible that some issues arise due to OpenCV VideoCapture. This issues are specific for each type of camera and operating system.
 
-2. To leave the video capture press 'q'.
+- To leave the video capture press 'q'.
 
-## Live results
+# Results
+
+TODO
 
 # Information about the project
-
-All of this specifications can be found in the 'model_definition_training.ipynb' file.
 
 ## Dataset
 
@@ -30,11 +32,7 @@ The emotions covered in the dataset are:
 
 ## Model architecture
 
-The model choosen was VGG16:
-
-→ (64, 64, 128, 128, 512, 512) Convolutional layers with 3x3 kernels, padding = 'same' and ReLu activation function
-
-→ (4016, 7) Dense layers, the first also with the ReLu activation function and the last one with softmax.
+The model choosen was VGG16.
 
 A batch normalization layer was added after all convolutional and dense layers in order to accelerate convergence and reduce overfitting.
 
@@ -46,7 +44,7 @@ To reduce overfitting, some data augmentation was performed on the training data
 
 ## Model training
 
-The model was trained for 30 epochs with batches with 32 observations, using Adam optimizer with initial learning rate of 0.0001 and categorical cross entropy loss function.
+The model was trained for 30 epochs with batches with 32 observations, using Adam optimizer and categorical cross entropy loss function.
 
 ## Model evaluation and assessment
 
