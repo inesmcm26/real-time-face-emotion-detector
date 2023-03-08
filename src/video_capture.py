@@ -7,7 +7,7 @@ FACE_DETECTION_PATH = '/models/haarcascade_frontalface_default.xml'
 def video_predict(model, emotions, pwd):
     face_haar_cascade = cv2.CascadeClassifier(pwd + FACE_DETECTION_PATH)
 
-    cap = cv2.VideoCapture(-1)
+    cap = cv2.VideoCapture(4) # set the available camera here!
 
     # Capture settings
     cap.set(cv2.CAP_PROP_BRIGHTNESS, 30)
