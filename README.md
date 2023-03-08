@@ -6,7 +6,7 @@ Run 'demo.ipynb' file
 
 - Instead of training the model, you can load the weights of the model that is availale in in the [vgg.h5](/models/vgg.h5) file. There is already one cell that does this.
 
-- It is possible that some issues arise due to OpenCV VideoCapture. This issues are specific for each type of camera and operating system.
+- It is possible that some issues arise due to OpenCV VideoCapture. This issues are specific for each type of camera and operating system. If you are using a linux system, you can run `v4l2-ctl --list-devices` on the terminal and see which is the number of the camera available. This command will output something like `/dev/video4`, so you know that camera 4 is available. Then, you go to [video_capture.py](/src/video_capture.py) and replace the number in `cv2.VideoCapture(x)` with the number of the camera available.
 
 - To leave the video capture press 'q'.
 
