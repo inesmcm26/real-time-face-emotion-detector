@@ -42,10 +42,8 @@ A dropout layer was also added before the last dense layer with proportion of ne
 
 To reduce overfitting, some data augmentation was performed on the training data. The transformations performed include rotation, zoom and horizontal flip.
 
-## Model training
+# Contributions
 
-The model was trained for 30 epochs with batches with 32 observations, using Adam optimizer and categorical cross entropy loss function.
+Contributions are welcomed!
 
-## Model evaluation and assessment
-
-The model was able to perform predicitons with an accuracy of 0.7 in training and 0.67 in validation.
+A good first issue would be finding better model parameters to increse the model's accuracy.
